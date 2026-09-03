@@ -1,0 +1,42 @@
+{
+  "name": "genpark-merchant-omnichannel-marketing-campaign-designer-skill",
+  "version": "1.0.0",
+  "description": "GenPark AI Agent Skill - Omnichannel retail marketing campaign designer synthesizing audience segmentation, copy variants, and SMS/Email templates.",
+  "homepage": "https://genpark.ai/mcp",
+  "author": "genpark",
+  "category": "merchant-agent",
+  "tags": [
+    "marketing-campaigns",
+    "omnichannel-copy",
+    "campaign-designer",
+    "merchant-agent",
+    "anthropic-commerce"
+  ],
+  "inputs": {
+    "campaign_objective": {
+      "type": "string"
+    },
+    "promotional_offer": {
+      "type": "string"
+    },
+    "channels": {
+      "type": "array"
+    }
+  },
+  "outputs": {
+    "campaign_design_id": {
+      "type": "string"
+    },
+    "target_audience_segment_size": {
+      "type": "integer"
+    },
+    "email_subject_line_variants": {
+      "type": "array"
+    },
+    "campaign_asset_bundle_url": {
+      "type": "string"
+    }
+  },
+  "entrypoint": "client.py",
+  "example": "example_usage.py"
+}
